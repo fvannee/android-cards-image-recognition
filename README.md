@@ -6,6 +6,6 @@ The repository is divided into two parts:
 - python: this directory contains the program used to train the image recognition software.
 
 Requirements:
-OpenCV 3.1
-Python 3
-Android SDK
+- OpenCV 3.2
+- Python 3
+- Android SDK
