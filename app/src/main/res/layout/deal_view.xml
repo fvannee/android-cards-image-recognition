@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Dealer: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_dealer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Vulnerability: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_vulnerability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:positionInDeal="north"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:positionInDeal="east"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_south"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:positionInDeal="south"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:positionInDeal="west"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button android:id="@+id/button_analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analyze"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <TableLayout android:id="@+id/table_analysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <TableRow>
+            <TextView android:layout_column="1"
+                android:text="N"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="E"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="S"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="W"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="C"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="D"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="H"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="S"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="NT"
+                android:textStyle="bold"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+            <TextView android:text="x"
+                android:padding="5sp"/>
+        </TableRow>
+    </TableLayout>
+</merge>

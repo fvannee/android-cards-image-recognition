@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HandView">
+        <attr name="positionInDeal" format="enum">
+            <enum name="north" value="0"/>
+            <enum name="east" value="1"/>
+            <enum name="south" value="2"/>
+            <enum name="west" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fnee.carddetector.ui.ScanCardFragment">
+
+    <com.fnee.opencv.JavaCameraView2
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/surface_view_camera" />
+
+    <Spinner
+        android:id="@+id/spinner_card_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8" />
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2sp"
+        custom:positionInDeal="north"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2sp"
+        custom:positionInDeal="east"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_south"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2sp"
+        custom:positionInDeal="south"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <com.fnee.carddetector.ui.HandView android:id="@+id/hand_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2sp"
+        custom:positionInDeal="west"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+</RelativeLayout>
